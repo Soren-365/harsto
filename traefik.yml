@@ -1,0 +1,29 @@
+api:
+  insecure: true
+  dashboard: true
+
+entryPoints:
+  http:
+    address: :80
+  https:
+    address: :443
+
+providers:
+  docker:
+    exposedByDefault: false
+    watch: true
+
+certificatesResolvers:
+  acme-staging:
+    acme:
+      email: henri.rion@gmail.com
+      caServer: https://acme-staging-v02.api.letsencrypt.org/directory
+      storage: acme.json
+      httpChallenge:
+        entryPoint: http
+  acme-production:
+    acme:
+      email: henri.rion@gmail.com
+      storage: acme.json
+      httpChallenge:
+        entryPoint: http

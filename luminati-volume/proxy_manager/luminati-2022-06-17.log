@@ -1,0 +1,35 @@
+2022-06-17 13:49:50.557 NOTICE: MNGR: uws not available, using ws library
+2022-06-17 13:49:50.564 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-17 13:49:50.565 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: fed32078f474
+2022-06-17 13:49:50.566 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-17 13:49:50.567 ERROR: Conf: /root/proxy_manager/.luminati.json has not been found
+2022-06-17 13:49:50.918 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-17 13:49:51.930 NOTICE: MNGR: lpm_f: Connection established
+2022-06-17 13:49:52.049 NOTICE: MNGR: Updated server configuration
+2022-06-17 13:49:52.189 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-17 13:49:52.455 NOTICE: MNGR: Running proxy configurations...
+2022-06-17 13:49:52.459 NOTICE: MNGR: Starting port 22225
+2022-06-17 13:49:54.186 NOTICE: MNGR: Port 22225 ready
+2022-06-17 13:49:54.187 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-17 13:49:54.415 NOTICE: Fetching vipdb data. New version 2022-06-15T08:24:51.002Z available (current is undefined)
+2022-06-17 13:49:54.417 NOTICE: Fetching carriers data. New version 2022-06-15T08:43:40.895Z available
+2022-06-17 13:50:00.009 NOTICE: MNGR: Creating web interface...
+2022-06-17 13:50:00.029 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|

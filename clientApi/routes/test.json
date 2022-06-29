@@ -1,0 +1,109 @@
+{
+  "data": {
+    "workspace": {
+      "title": "newone",
+      "productsCount": 27,
+      "products": [
+        {
+          "code": "3209392",
+          "urls": [
+            {
+              "url": "https://www.farmaline.be/pharmacie/commander/somatoline-cosmetic-7-nuits-natural-peau-sensible/",
+              "price": "39.13",
+              "inStock": true,
+              "reseller": "farmaline.be"
+            }
+          ]
+        },
+        {
+          "code": "3134038",
+          "urls": [
+            {
+              "url": "https://www.farmaline.be/pharmacie/commander/alline-procap-30-capsules/",
+              "price": "12.79",
+              "inStock": true,
+              "reseller": "farmaline.be"
+            }
+          ]
+        },
+        {
+          "code": "2643617",
+          "urls": [
+            {
+              "url": "https://www.farmaline.be/pharmacie/commander/alline-promen/",
+              "price": "31.99",
+              "inStock": true,
+              "reseller": "farmaline.be"
+            }
+          ]
+        },
+        {
+          "code": "3086311",
+          "urls": [
+            {
+              "url": "https://www.farmaline.be/pharmacie/commander/avene-trixera-nutrition-lait-nutri-fluide-400ml/",
+              "price": "14.24",
+              "inStock": true,
+              "reseller": "farmaline.be"
+            }
+          ]
+        },
+        {
+          "code": "3537677",
+          "urls": [
+            {
+              "url": "https://www.farmaline.be/pharmacie/commander/bioderma-atoderm-intensive-gel-moussant/",
+              "price": "13.97",
+              "inStock": true,
+              "reseller": "farmaline.be"
+            }
+          ]
+        },
+        {
+          "code": "3806932",
+          "urls": [
+            {
+              "url": "https://www.farmaline.be/pharmacie/commander/avene-cicalfate-creme-100-ml/",
+              "price": "11.82",
+              "inStock": false,
+              "reseller": "farmaline.be"
+            }
+          ]
+        },
+        {
+          "code": "3630217",
+          "urls": [
+            {
+              "url": "https://www.farmaline.be/pharmacie/commander/la-roche-posay-toleriane-sensitive-creme/",
+              "price": "13.83",
+              "inStock": true,
+              "reseller": "farmaline.be"
+            }
+          ]
+        },
+        {
+          "code": "4321279",
+          "urls": [
+            {
+              "url": "https://www.farmaline.be/pharmacie/commander/bepanthen-baby-onguent-petites-fesses-rouges-100g/",
+              "price": "11.96",
+              "inStock": true,
+              "reseller": "farmaline.be"
+            }
+          ]
+        },
+        {
+          "code": "3170412",
+          "urls": [
+            {
+              "url": "https://www.farmaline.be/pharmacie/commander/la-roche-posay-lipikar-gel-lavant-400-ml/",
+              "price": "7.88",
+              "inStock": true,
+              "reseller": "farmaline.be"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,415 @@
+2022-06-28 08:44:19.005 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 08:44:29.597 NOTICE: MNGR: lpm_f: Connection established
+2022-06-28 12:48:09.646 ERROR: MNGR: lpm_f: resolve_proxies [code=ipc_timeout] Error: resolve_proxies timeout
+    at Etask.<anonymous> (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/ws.js:876:29)
+    at Etask.emit (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/events.js:54:22)
+    at Timeout._onTimeout (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/etask.js:781:15)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+2022-06-28 12:48:39.618 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:48:59.627 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:49:19.639 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:49:39.651 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:49:59.664 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:50:19.674 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:50:39.687 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:50:59.698 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:51:19.710 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:51:39.724 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:51:55.800 WARN: MNGR: Failed to resolve zproxy.lum-superproxy.io: queryA ETIMEOUT zproxy.lum-superproxy.io
+2022-06-28 12:51:59.734 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:52:19.749 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:52:35.809 ERROR: MNGR: lpm_f: resolve_proxies [code=ipc_timeout] Error: resolve_proxies timeout
+    at Etask.<anonymous> (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/ws.js:876:29)
+    at Etask.emit (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/events.js:54:22)
+    at Timeout._onTimeout (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/etask.js:781:15)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+2022-06-28 12:52:39.762 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:52:59.774 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:53:19.786 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:53:39.796 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:53:59.806 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:54:19.819 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:54:39.830 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:54:59.842 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:55:19.854 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:55:39.866 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:55:59.879 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:56:19.891 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:56:20.978 WARN: MNGR: Failed to resolve zproxy.lum-superproxy.io: queryA ETIMEOUT zproxy.lum-superproxy.io
+2022-06-28 12:56:39.902 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:56:59.920 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:57:00.982 ERROR: MNGR: lpm_f: resolve_proxies [code=ipc_timeout] Error: resolve_proxies timeout
+    at Etask.<anonymous> (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/ws.js:876:29)
+    at Etask.emit (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/events.js:54:22)
+    at Timeout._onTimeout (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/etask.js:781:15)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+2022-06-28 12:57:19.931 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:57:39.943 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:57:59.951 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:58:13.075 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:58:33.087 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:58:53.099 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 12:59:13.110 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:59:33.122 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 12:59:43.126 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 13:00:03.139 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 13:00:23.150 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 13:00:43.162 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 13:00:46.190 WARN: MNGR: Failed to resolve zproxy.lum-superproxy.io: queryA ETIMEOUT zproxy.lum-superproxy.io
+2022-06-28 13:01:03.174 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 13:01:23.186 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 13:01:26.208 ERROR: MNGR: lpm_f: resolve_proxies [code=ipc_timeout] Error: resolve_proxies timeout
+    at Etask.<anonymous> (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/ws.js:876:29)
+    at Etask.emit (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/events.js:54:22)
+    at Timeout._onTimeout (/usr/local/lib/node_modules/@luminati-io/luminati-proxy/util/etask.js:781:15)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+2022-06-28 13:01:43.200 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:09:48.712 NOTICE: MNGR: uws not available, using ws library
+2022-06-28 14:09:48.717 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-28 14:09:48.718 NOTICE: MNGR: Running Proxy Manager
+PID: 17
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: f1d1ab7df9dd
+2022-06-28 14:09:48.719 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-28 14:09:58.777 ERROR: MNGR: getaddrinfo ENOTFOUND lumtest.com
+2022-06-28 14:09:58.777 WARN: MNGR: Could not fetch your IP and adjust Proxy Manager
+2022-06-28 14:09:58.778 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-28 14:10:08.796 ERROR: MNGR: Could not access lum-lpm.com: ETIMEDOUT
+2022-06-28 14:10:08.797 NOTICE: MNGR: Checking the domain availability... l-lpm.com
+2022-06-28 14:10:18.802 ERROR: MNGR: Could not access l-lpm.com: ETIMEDOUT
+2022-06-28 14:10:28.826 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:10:48.835 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:11:08.848 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:11:28.860 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:11:48.872 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:12:08.884 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:12:28.896 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:12:48.908 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:13:08.916 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:13:28.928 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:13:48.940 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:14:08.952 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:14:28.965 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:14:48.981 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:15:08.993 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:15:29.012 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:15:49.028 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:16:09.044 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:16:29.060 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:16:49.076 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:17:09.092 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:17:29.112 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:17:49.128 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:18:09.147 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:18:29.168 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:18:49.188 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:19:09.204 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:19:29.224 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:19:49.240 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:20:09.256 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:20:29.272 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:20:49.288 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:21:09.300 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:21:29.319 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:21:49.337 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:22:09.356 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:22:25.904 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:22:45.920 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:23:05.937 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:23:25.953 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:23:45.969 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:24:05.984 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:24:26.000 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:24:46.016 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:25:06.034 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:25:31.063 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:25:51.078 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:26:11.092 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:26:31.104 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:26:51.116 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:27:11.128 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:27:31.141 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:27:51.152 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:28:11.164 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:28:31.176 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:28:51.192 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:29:11.204 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:29:31.217 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:29:51.232 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:30:11.245 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:30:31.258 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:30:51.268 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:31:11.280 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:31:31.293 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:31:51.307 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:32:11.321 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:32:31.328 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:32:51.341 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:33:11.352 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:33:31.368 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:33:51.380 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 14:34:11.392 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:34:31.404 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 14:34:49.287 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 17:18:07.606 WARN: MNGR: lpm_f: Connection failed... trying luminati.io
+2022-06-28 17:18:17.619 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 17:18:28.208 NOTICE: MNGR: lpm_f: Connection established
+2022-06-28 17:18:28.323 NOTICE: MNGR: Updated server configuration
+2022-06-28 17:18:28.477 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-28 17:18:28.566 NOTICE: MNGR: Running proxy configurations...
+2022-06-28 17:18:28.568 NOTICE: MNGR: Starting port 22225
+2022-06-28 17:18:29.650 NOTICE: MNGR: Port 22225 ready
+2022-06-28 17:18:29.652 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-28 17:18:30.627 NOTICE: MNGR: Creating web interface...
+2022-06-28 17:18:30.634 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-28 17:50:53.999 WARN: MNGR: lpm_f: Connection failed... trying lum-superproxy.io
+2022-06-28 17:51:04.546 NOTICE: MNGR: lpm_f: Connection established
+2022-06-28 21:35:06.756 NOTICE: MNGR: uws not available, using ws library
+2022-06-28 21:35:06.763 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-28 21:35:06.764 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: f1d1ab7df9dd
+2022-06-28 21:35:06.765 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-28 21:35:07.191 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-28 21:35:08.539 NOTICE: MNGR: lpm_f: Connection established
+2022-06-28 21:35:08.653 NOTICE: MNGR: Updated server configuration
+2022-06-28 21:35:08.798 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-28 21:35:08.916 NOTICE: MNGR: Running proxy configurations...
+2022-06-28 21:35:08.917 NOTICE: MNGR: Starting port 22225
+2022-06-28 21:35:10.273 NOTICE: MNGR: Port 22225 ready
+2022-06-28 21:35:10.274 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-28 21:35:11.368 NOTICE: MNGR: Creating web interface...
+2022-06-28 21:35:11.379 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-28 21:45:54.856 NOTICE: MNGR: uws not available, using ws library
+2022-06-28 21:45:54.861 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-28 21:45:54.862 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: 46f163043491
+2022-06-28 21:45:54.863 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-28 21:45:55.967 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-28 21:45:56.936 NOTICE: MNGR: lpm_f: Connection established
+2022-06-28 21:45:57.070 NOTICE: MNGR: Updated server configuration
+2022-06-28 21:45:57.207 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-28 21:45:57.447 NOTICE: MNGR: Running proxy configurations...
+2022-06-28 21:45:57.449 NOTICE: MNGR: Starting port 22225
+2022-06-28 21:45:58.979 NOTICE: MNGR: Port 22225 ready
+2022-06-28 21:45:58.980 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-28 21:45:59.995 NOTICE: MNGR: Creating web interface...
+2022-06-28 21:46:00.007 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-28 21:52:38.168 NOTICE: MNGR: uws not available, using ws library
+2022-06-28 21:52:38.173 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-28 21:52:38.174 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: 46f163043491
+2022-06-28 21:52:38.175 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-28 21:52:38.450 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-28 21:52:39.353 NOTICE: MNGR: lpm_f: Connection established
+2022-06-28 21:52:39.484 NOTICE: MNGR: Updated server configuration
+2022-06-28 21:52:39.619 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-28 21:52:39.832 NOTICE: MNGR: Running proxy configurations...
+2022-06-28 21:52:39.833 NOTICE: MNGR: Starting port 22225
+2022-06-28 21:52:41.300 NOTICE: MNGR: Port 22225 ready
+2022-06-28 21:52:41.301 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-28 21:52:42.329 NOTICE: MNGR: Creating web interface...
+2022-06-28 21:52:42.336 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-28 22:00:44.492 NOTICE: MNGR: uws not available, using ws library
+2022-06-28 22:00:44.497 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-28 22:00:44.498 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: 85102ac94736
+2022-06-28 22:00:44.499 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-28 22:00:44.814 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-28 22:00:45.783 NOTICE: MNGR: lpm_f: Connection established
+2022-06-28 22:00:45.901 NOTICE: MNGR: Updated server configuration
+2022-06-28 22:00:46.032 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-28 22:00:46.199 NOTICE: MNGR: Running proxy configurations...
+2022-06-28 22:00:46.201 NOTICE: MNGR: Starting port 22225
+2022-06-28 22:00:47.409 WARN: MNGR: Worker with PID 133 died (null SIGSEGV). Restarting...
+2022-06-28 22:00:47.426 NOTICE: MNGR: Worker with PID 211 recreated
+2022-06-28 22:00:48.171 NOTICE: MNGR: Port 22225 ready
+2022-06-28 22:00:48.172 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-28 22:00:49.171 NOTICE: MNGR: Creating web interface...
+2022-06-28 22:00:49.179 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-28 22:04:25.392 NOTICE: MNGR: uws not available, using ws library
+2022-06-28 22:04:25.399 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-28 22:04:25.400 NOTICE: MNGR: Running Proxy Manager
+PID: 17
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: 85102ac94736
+2022-06-28 22:04:25.401 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-28 22:04:25.693 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-28 22:04:26.634 NOTICE: MNGR: lpm_f: Connection established
+2022-06-28 22:04:26.759 NOTICE: MNGR: Updated server configuration
+2022-06-28 22:04:26.904 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-28 22:04:27.150 NOTICE: MNGR: Running proxy configurations...
+2022-06-28 22:04:27.152 NOTICE: MNGR: Starting port 22225
+2022-06-28 22:04:29.468 WARN: MNGR: Worker with PID 40 died (null SIGSEGV). Restarting...
+2022-06-28 22:04:29.475 NOTICE: MNGR: Worker with PID 210 recreated
+2022-06-28 22:04:30.304 WARN: MNGR: Worker with PID 210 died (null SIGSEGV). Restarting...
+2022-06-28 22:04:30.317 NOTICE: MNGR: Worker with PID 221 recreated
+2022-06-28 22:04:31.222 NOTICE: MNGR: Port 22225 ready
+2022-06-28 22:04:31.223 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-28 22:04:32.370 NOTICE: MNGR: Creating web interface...
+2022-06-28 22:04:32.380 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-28 22:07:25.956 NOTICE: MNGR: uws not available, using ws library
+2022-06-28 22:07:25.960 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-28 22:07:25.961 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: 85102ac94736
+2022-06-28 22:07:25.962 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-28 22:07:26.241 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-28 22:07:27.194 NOTICE: MNGR: lpm_f: Connection established
+2022-06-28 22:07:27.313 NOTICE: MNGR: Updated server configuration
+2022-06-28 22:07:27.457 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-28 22:07:27.610 NOTICE: MNGR: Running proxy configurations...
+2022-06-28 22:07:27.612 NOTICE: MNGR: Starting port 22225
+2022-06-28 22:07:29.091 NOTICE: MNGR: Port 22225 ready
+2022-06-28 22:07:29.092 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-28 22:07:30.056 NOTICE: MNGR: Creating web interface...
+2022-06-28 22:07:30.064 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-28 22:22:32.044 NOTICE: MNGR: uws not available, using ws library
+2022-06-28 22:22:32.049 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-28 22:22:32.050 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: 85102ac94736
+2022-06-28 22:22:32.050 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-28 22:22:32.371 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-28 22:22:33.340 NOTICE: MNGR: lpm_f: Connection established
+2022-06-28 22:22:33.460 NOTICE: MNGR: Updated server configuration
+2022-06-28 22:22:33.601 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-28 22:22:33.778 NOTICE: MNGR: Running proxy configurations...
+2022-06-28 22:22:33.780 NOTICE: MNGR: Starting port 22225
+2022-06-28 22:22:35.304 NOTICE: MNGR: Port 22225 ready
+2022-06-28 22:22:35.306 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-28 22:22:36.259 NOTICE: MNGR: Creating web interface...
+2022-06-28 22:22:36.268 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|

@@ -1,0 +1,99 @@
+version: '3'
+
+services:
+  
+  traefik:
+    image: traefik:v2.4
+    command: 
+      - "--api.insecure=true" 
+      - "--providers.docker"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    container_name: "traefik"
+    ports:
+    # The HTTP port
+    - "80:80"
+    #- "443:443"
+    # The Web UI (enabled by --api.insecure=true)
+    - "8080:8080"
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - ./traefik.yml:/etc/traefik/traefik.yml
+    - ./acme.json:/acme.json
+    networks:
+    - traefik
+    restart: unless-stopped
+
+
+  # whoami:
+  #   image: "traefik/whoami"
+  #   networks:
+  #   - traefik
+  #   labels:
+  #     - "traefik.enable=true"
+  #     - "traefik.http.routers.whoami.rule=Host(`whoami.docker.localhost`)"
+  #     # - "traefik.http.routers.whoami.entrypoints=web"
+  #     - traefik.docker.network=traefik
+  #     - traefik.http.routers.blog.rule=Host(`example.com`) && Path(`/blog`)
+  #     - traefik.http.routers.blog.tls=true
+  #     - traefik.http.routers.blog.tls.certresolver=acme-production
+  #     # - traefik.http.middlewares.whoami-force-tls.redirectscheme.scheme=https
+  #     # - traefik.http.routers.whoami.middlewares=whoami-force-tls@docker
+  #     # - traefik.http.routers.whoami-tls.rule=Host(`whoami.docker.localhost`)
+  #     # - traefik.http.routers.whoami-tls.tls=true
+  #     # - traefik.http.routers.whoami-tls.tls.certresolver=acme-production
+
+
+  elasticsearch:
+    image: elasticsearch:7.14.1
+    container_name: elasticsearch
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - ./elasticsearch:/usr/share/elasticsearch/data
+    environment:
+      discovery.type: "single-node"
+      xpack.security.enabled: "true"
+      xpack.security.audit.enabled: "true"
+      ELASTIC_PASSWORD: "mypassword"   #to be changed later
+    networks:
+      - harvestore
+    restart: always
+
+  kibana:
+    image: kibana:7.14.1
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    environment:
+      ELASTICSEARCH_URL: elasticsearch
+      ELASTICSEARCH_USERNAME: "elastic"  #to be changed later
+      ELASTICSEARCH_PASSWORD: "mypassword"  #to be changed later
+    depends_on:
+      - elasticsearch
+    networks:
+      - harvestore
+      - traefik
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik
+      - traefik.http.middlewares.kibana-force-tls.redirectscheme.scheme=https
+      - traefik.http.routers.kibana.rule=Host(`kibana.harve.store`)
+      # - traefik.http.routers.kibana.middlewares=kibana-force-tls@docker
+      # - traefik.http.routers.kibana-tls.rule=Host(`kibana.harve.store`)
+      # - traefik.http.routers.kibana-tls.tls=true
+      # - traefik.http.routers.kibana-tls.tls.certresolver=acme-production
+    restart: always       
+     
+networks:
+  harvestore:
+      driver: bridge
+  traefik:
+      external: true

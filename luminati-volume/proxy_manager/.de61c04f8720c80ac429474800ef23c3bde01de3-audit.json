@@ -1,0 +1,19 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 2
+    },
+    "auditLog": "/root/proxy_manager/.de61c04f8720c80ac429474800ef23c3bde01de3-audit.json",
+    "files": [
+        {
+            "date": 1656405859007,
+            "name": "/root/proxy_manager/luminati-2022-06-28.log",
+            "hash": "81b36533c1a4ed4a6b167b979c5815fe"
+        },
+        {
+            "date": 1656493188377,
+            "name": "/root/proxy_manager/luminati-2022-06-29.log",
+            "hash": "02e5142f1c9f2c6f2d22598db3778c45"
+        }
+    ]
+}

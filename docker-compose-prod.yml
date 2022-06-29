@@ -1,0 +1,237 @@
+version: "3"
+
+services:
+
+  elasticsearch:
+    image: elasticsearch:7.14.1
+    container_name: elasticsearch
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - ./elasticsearch:/usr/share/elasticsearch/data
+    environment:
+      discovery.type: "single-node"
+      xpack.security.enabled: "true"
+      xpack.security.audit.enabled: "true"
+      ELASTIC_PASSWORD: "mypassword"   #to be changed later
+    networks:
+      - harvestore_production
+    restart: always
+
+  kibana:
+    image: kibana:7.14.1
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    environment:
+      ELASTICSEARCH_URL: elasticsearch
+      ELASTICSEARCH_USERNAME: "elastic"  #to be changed later
+      ELASTICSEARCH_PASSWORD: "mypassword"  #to be changed later
+    depends_on:
+      - elasticsearch
+    networks:
+      - harvestore_production
+      # - traefik
+    # labels:
+    #   - traefik.enable=true
+    #   - traefik.docker.network=traefik
+    #   - traefik.http.middlewares.kibana-force-tls.redirectscheme.scheme=https
+
+    #   - traefik.http.routers.kibana.rule=Host(`kibana.harve.store`)
+    #   - traefik.http.routers.kibana.middlewares=kibana-force-tls@docker
+
+    #   - traefik.http.routers.kibana-tls.rule=Host(`kibana.harve.store`)
+    #   - traefik.http.routers.kibana-tls.tls=true
+    #   - traefik.http.routers.kibana-tls.tls.certresolver=acme-production
+    restart: always
+
+  proxy-manager:
+    image: luminati/luminati-proxy:latest
+    container_name: proxy-manager
+    restart: always
+    ports:
+      - "22999:22999"
+      - "22555:22555"
+      - "24000:24000"
+      - "24001:24001"
+    environment:
+      LPM_WWW_WHITELIST_IPS: "192.168.1.11"
+      LPM_WHITELIST_IPS: "0.0.0.0/0"
+    command: [ "proxy-manager" ]
+    networks:
+      - harvestore_production
+    #   - traefik
+    # labels:
+    #   - traefik.enable=true
+    #   - traefik.docker.network=traefik
+    #   - traefik.http.middlewares.proxy-force-tls.redirectscheme.scheme=https
+
+    #   - traefik.http.routers.proxy.rule=Host(`proxy.harve.store`)
+    #   - traefik.http.routers.proxy.middlewares=proxy-force-tls@docker
+
+    #   - traefik.http.routers.proxy-tls.rule=Host(`proxy.harve.store`)
+    #   - traefik.http.routers.proxy-tls.tls=true
+    #   - traefik.http.routers.proxy-tls.tls.certresolver=acme-production
+
+    volumes:
+      - ./tools/docker/provision/luminati:/etc/luminati/
+      - ./luminati-volume:/root/
+
+  browserless:
+    image: browserless/chrome:1.44-chrome-stable
+    container_name: browserless
+    ports:
+      - "3001:3000"
+    networks:
+      - harvestore_production
+    restart: always
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    hostname: 'rabbitmq'
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - '~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/mnesia/'
+    depends_on:
+      - elasticsearch
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 30s
+      retries: 3
+    networks:
+      - harvestore_production
+    # - traefik
+    # labels:
+    #  - traefik.enable=true
+    #  - traefik.docker.network=traefik
+    #  - traefik.http.middlewares.rabbitmq-force-tls.redirectscheme.scheme=https
+
+    #  - traefik.http.routers.rabbitmq.rule=Host(`rabbit.harve.store`)
+    #  - traefik.http.routers.rabbitmq.middlewares=rabbitmq-force-tls@docker
+
+    #  - traefik.http.routers.rabbitmq-tls.rule=Host(`rabbit.harve.store`)
+    #  - traefik.http.routers.rabbitmq-tls.tls=true
+    #  - traefik.http.routers.rabbitmq-tls.tls.certresolver=acme-production
+
+    restart: always
+
+  api:
+    build:
+      context: ./api
+    container_name: api
+    ports:
+      - "3007:3007"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      API_PORT: "3007"
+
+      AUTH0_DOMAIN: "harvestore.eu.auth0.com"
+      AUTH0_AUDIENCE: "https://harvestore-v5-api"
+
+      ELASTIC_HOST: elasticsearch
+      ELASTIC_PORT: "9200"
+      ELASTIC_USERNAME: "elastic"
+      ELASTIC_PASSWORD: "mypassword"
+      ELASTIC_TIMEOUT: "60000"
+
+      RABBIT_USERNAME: "guest"
+      RABBIT_PASSWORD: "guest"
+      RABBIT_HOST: rabbitmq
+      RABBIT_PORT: "5672"
+      RABBIT_PORT_API: "15672"
+      RABBIT_PREFETCH: "10"
+      RABBIT_AUTHORIZATION: "Basic aGFydmVzdG9yZTpHVG5YNWhaY1NCMVlrTXNQb3NQY1ZEdmQxRVJlcjBiaVE1cERJcnZwbXJzM1JSdWdhdGg0cEVQTHM5WmtNN0Vx"
+
+      PROXY_MANAGER_HOST: proxy-manager
+      PROXY_MANAGER_PORT: "24000"
+      PROXY_MANAGER_USERNAME: "lum-auth-token"
+      #PROXY_MANAGER_PASSWORD: "e7Yr8jw7v7FDrBdnGWNt5kAbjzmHbTG6"
+      PROXY_MANAGER_PASSWORD: yvApt8LJ7j3yT6LkhKuKUswZGV98q4k2
+
+      BROWSERLESS_HOST: browserless
+      BROWSERLESS_PORT: "3000"
+    networks:
+      - harvestore_production
+
+
+  client-api:
+    container_name: client-api
+    build: 
+      context: ./clientApi
+      dockerfile: Dockerfile
+    restart: always   
+    ports:
+      - 7777:7777
+    networks:
+      - harvestore_production
+           
+
+  #     - traefik
+
+  #   labels:
+  #     - traefik.enable=true
+  #     - traefik.docker.network=traefik
+  #     - traefik.http.middlewares.harvestore-api-force-tls.redirectscheme.scheme=https
+
+  #     - traefik.http.routers.harvestore-api.rule=Host(`harve.store`) && PathPrefix(`/api`)
+  #     - traefik.http.routers.harvestore-api.middlewares=harvestore-api-force-tls@docker
+
+  #     - traefik.http.routers.harvestore-api-tls.rule=Host(`harve.store`) && PathPrefix(`/api`)
+  #     - traefik.http.routers.harvestore-api-tls.tls=true
+  #     - traefik.http.routers.harvestore-api-tls.tls.certresolver=acme-production
+
+  #   restart: always
+
+networks:
+  harvestore_production:
+  #     driver: bridge
+  #   traefik:
+  #     external: true
+
+
+  # client:
+  #   build:
+  #     context: ./client
+  #   container_name: client
+  #   #ports: 
+  #   #  - "8087:80"
+  #   environment:
+  #     VUE_APP_BACKEND_HOST: "harve.store"
+  #     VUE_APP_BACKEND_PORT: "3007"
+
+  #     VUE_APP_AUTH0_DOMAIN: "harvestore.eu.auth0.com"
+  #     VUE_APP_AUTH0_CLIENT_ID: "iH73iTqc20WaFRBXIJefF3Nh80DRcENi"
+  #     VUE_APP_AUTH0_REDIRECT_URI: "harve.store"
+  #     VUE_APP_AUTH0_AUDIENCE: "https://harvestore-v5-api"
+
+  #   networks:
+  #     - harvestore
+  #     - traefik
+
+  #   labels:
+  #     - traefik.enable=true
+  #     - traefik.docker.network=traefik
+  #     - traefik.http.middlewares.client-force-tls.redirectscheme.scheme=https
+
+  #     - traefik.http.routers.client.rule=Host(`harve.store`)
+  #     - traefik.http.routers.client.middlewares=client-force-tls@docker
+
+  #     - traefik.http.routers.client-tls.rule=Host(`harve.store`)
+  #     - traefik.http.routers.client-tls.tls=true
+  #     - traefik.http.routers.client-tls.tls.certresolver=acme-production
+
+  #   restart: always
+
