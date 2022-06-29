@@ -123,12 +123,8 @@ services:
     #   - traefik.http.routers.rabbitmq-tls.rule=Host(`rabbit.harve.store`)
     #   - traefik.http.routers.rabbitmq-tls.tls=true
     #   - traefik.http.routers.rabbitmq-tls.tls.certresolver=acme-production
-
     restart: always
 
-
-
-          
   api:
     build:
       context: ./api
