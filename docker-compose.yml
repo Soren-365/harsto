@@ -128,36 +128,6 @@ services:
 
 
 
-  traefik:
-    image: traefik:v2.4
-    command: 
-      - "--api.insecure=true"
-      - "--providers.docker=true"
-      - "--providers.docker.exposedbydefault=false"
-      - "--entrypoints.web.address=:80"
-    container_name: "traefik"
-    ports:
-    # The HTTP port
-    - "80:80"
-    - "443:443"
-    # The Web UI (enabled by --api.insecure=true)
-    - "8888:8080"
-    volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
-    - ./traefik.yml:/etc/traefik/traefik.yml
-    - ./acme.json:/acme.json
-    networks:
-    - traefik
-    restart: unless-stopped
-
-
-  whoami:
-    image: "traefik/whoami"
-    container_name: "simple-service"
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.whoami.rule=Host(`whoami.localhost`)"
-      - "traefik.http.routers.whoami.entrypoints=web"
           
   api:
     build:
@@ -219,7 +189,7 @@ services:
        - ./clientApi:/var/www/clientApi
     networks:
       - harvestore
-      - traefik
+      # - traefik
     # labels:
     #   - traefik.enable=true
     #   - traefik.docker.network=traefik
@@ -289,4 +259,37 @@ networks:
   #     - traefik.http.routers.client-tls.tls.certresolver=acme-production
 
   #   restart: always
+
+
+
+  # traefik:
+  #   image: traefik:v2.4
+  #   command: 
+  #     - "--api.insecure=true"
+  #     - "--providers.docker=true"
+  #     - "--providers.docker.exposedbydefault=false"
+  #     - "--entrypoints.web.address=:80"
+  #   container_name: "traefik"
+  #   ports:
+  #   # The HTTP port
+  #   - "80:80"
+  #   - "443:443"
+  #   # The Web UI (enabled by --api.insecure=true)
+  #   - "8888:8080"
+  #   volumes:
+  #   - /var/run/docker.sock:/var/run/docker.sock
+  #   - ./traefik.yml:/etc/traefik/traefik.yml
+  #   - ./acme.json:/acme.json
+  #   networks:
+  #   - traefik
+  #   restart: unless-stopped
+
+
+  # whoami:
+  #   image: "traefik/whoami"
+  #   container_name: "simple-service"
+  #   labels:
+  #     - "traefik.enable=true"
+  #     - "traefik.http.routers.whoami.rule=Host(`whoami.localhost`)"
+  #     - "traefik.http.routers.whoami.entrypoints=web"
 
