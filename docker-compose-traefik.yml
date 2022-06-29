@@ -25,23 +25,23 @@ services:
     restart: unless-stopped
 
 
-  # whoami:
-  #   image: "traefik/whoami"
-  #   networks:
-  #   - traefik
-  #   labels:
-  #     - "traefik.enable=true"
-  #     - "traefik.http.routers.whoami.rule=Host(`whoami.docker.localhost`)"
-  #     # - "traefik.http.routers.whoami.entrypoints=web"
-  #     - traefik.docker.network=traefik
-  #     - traefik.http.routers.blog.rule=Host(`example.com`) && Path(`/blog`)
-  #     - traefik.http.routers.blog.tls=true
-  #     - traefik.http.routers.blog.tls.certresolver=acme-production
-  #     # - traefik.http.middlewares.whoami-force-tls.redirectscheme.scheme=https
-  #     # - traefik.http.routers.whoami.middlewares=whoami-force-tls@docker
-  #     # - traefik.http.routers.whoami-tls.rule=Host(`whoami.docker.localhost`)
-  #     # - traefik.http.routers.whoami-tls.tls=true
-  #     # - traefik.http.routers.whoami-tls.tls.certresolver=acme-production
+  whoami:
+    image: "traefik/whoami"
+    networks:
+    - traefik
+    labels:
+      - "traefik.enable=true"
+      # - "traefik.http.routers.whoami.rule=Host(`whoami.docker.localhost`)"
+      # - "traefik.http.routers.whoami.entrypoints=web"
+      - traefik.docker.network=traefik
+      - traefik.http.routers.whoami.rule=Host(`harvestore.ga`) 
+      # - traefik.http.routers.whoami.tls=true
+      # - traefik.http.routers.whoami.tls.certresolver=acme-production
+      # - traefik.http.middlewares.whoami-force-tls.redirectscheme.scheme=https
+      # - traefik.http.routers.whoami.middlewares=whoami-force-tls@docker
+      # - traefik.http.routers.whoami-tls.rule=Host(`whoami.docker.localhost`)
+      # - traefik.http.routers.whoami-tls.tls=true
+      # - traefik.http.routers.whoami-tls.tls.certresolver=acme-production
 
 
   elasticsearch:

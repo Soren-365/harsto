@@ -5,12 +5,12 @@ services:
   elasticsearch:
     image: elasticsearch:7.14.1
     container_name: elasticsearch
-    deploy:
-      resources:
-        limits:
-          memory: 2G
-        reservations:
-          memory: 1G
+    # deploy:
+    #   resources:
+    #     limits:
+    #       memory: 2G
+    #     reservations:
+    #       memory: 1G
     ports:
       - "9200:9200"
       - "9300:9300"
@@ -38,18 +38,18 @@ services:
       - elasticsearch
     networks:
       - harvestore
-      - traefik
-    labels:
-      - traefik.enable=true
-      - traefik.docker.network=traefik
-      - traefik.http.middlewares.kibana-force-tls.redirectscheme.scheme=https
+    #   - traefik
+    # labels:
+    #   - traefik.enable=true
+    #   - traefik.docker.network=traefik
+    #   - traefik.http.middlewares.kibana-force-tls.redirectscheme.scheme=https
 
-      - traefik.http.routers.kibana.rule=Host(`kibana.harve.store`)
-      - traefik.http.routers.kibana.middlewares=kibana-force-tls@docker
+    #   - traefik.http.routers.kibana.rule=Host(`kibana.harve.store`)
+    #   - traefik.http.routers.kibana.middlewares=kibana-force-tls@docker
 
-      - traefik.http.routers.kibana-tls.rule=Host(`kibana.harve.store`)
-      - traefik.http.routers.kibana-tls.tls=true
-      - traefik.http.routers.kibana-tls.tls.certresolver=acme-production
+    #   - traefik.http.routers.kibana-tls.rule=Host(`kibana.harve.store`)
+    #   - traefik.http.routers.kibana-tls.tls=true
+    #   - traefik.http.routers.kibana-tls.tls.certresolver=acme-production
     restart: always
 
   proxy-manager:
@@ -67,18 +67,18 @@ services:
     command: [ "proxy-manager" ]
     networks:
       - harvestore
-      - traefik
-    labels:
-      - traefik.enable=true
-      - traefik.docker.network=traefik
-      - traefik.http.middlewares.proxy-force-tls.redirectscheme.scheme=https
+    #   - traefik
+    # labels:
+    #   - traefik.enable=true
+    #   - traefik.docker.network=traefik
+    #   - traefik.http.middlewares.proxy-force-tls.redirectscheme.scheme=https
 
-      - traefik.http.routers.proxy.rule=Host(`proxy.harve.store`)
-      - traefik.http.routers.proxy.middlewares=proxy-force-tls@docker
+    #   - traefik.http.routers.proxy.rule=Host(`proxy.harve.store`)
+    #   - traefik.http.routers.proxy.middlewares=proxy-force-tls@docker
 
-      - traefik.http.routers.proxy-tls.rule=Host(`proxy.harve.store`)
-      - traefik.http.routers.proxy-tls.tls=true
-      - traefik.http.routers.proxy-tls.tls.certresolver=acme-production
+    #   - traefik.http.routers.proxy-tls.rule=Host(`proxy.harve.store`)
+    #   - traefik.http.routers.proxy-tls.tls=true
+    #   - traefik.http.routers.proxy-tls.tls.certresolver=acme-production
 
     volumes:
       - ./tools/docker/provision/luminati:/etc/luminati/
@@ -111,18 +111,18 @@ services:
       retries: 3
     networks:
       - harvestore
-      - traefik
-    labels:
-      - traefik.enable=true
-      - traefik.docker.network=traefik
-      - traefik.http.middlewares.rabbitmq-force-tls.redirectscheme.scheme=https
+    #   - traefik
+    # labels:
+    #   - traefik.enable=true
+    #   - traefik.docker.network=traefik
+    #   - traefik.http.middlewares.rabbitmq-force-tls.redirectscheme.scheme=https
 
-      - traefik.http.routers.rabbitmq.rule=Host(`rabbit.harve.store`)
-      - traefik.http.routers.rabbitmq.middlewares=rabbitmq-force-tls@docker
+    #   - traefik.http.routers.rabbitmq.rule=Host(`rabbit.harve.store`)
+    #   - traefik.http.routers.rabbitmq.middlewares=rabbitmq-force-tls@docker
 
-      - traefik.http.routers.rabbitmq-tls.rule=Host(`rabbit.harve.store`)
-      - traefik.http.routers.rabbitmq-tls.tls=true
-      - traefik.http.routers.rabbitmq-tls.tls.certresolver=acme-production
+    #   - traefik.http.routers.rabbitmq-tls.rule=Host(`rabbit.harve.store`)
+    #   - traefik.http.routers.rabbitmq-tls.tls=true
+    #   - traefik.http.routers.rabbitmq-tls.tls.certresolver=acme-production
 
     restart: always
 
@@ -236,8 +236,8 @@ services:
 networks:
   harvestore:
       driver: bridge
-  traefik:
-      external: true
+  # traefik:
+  #     external: true
 
 
 
