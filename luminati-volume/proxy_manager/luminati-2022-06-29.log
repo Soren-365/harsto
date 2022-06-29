@@ -404,3 +404,305 @@ Host name: b847a8e5d1c8
 |                                                |
 |                                                |
 |================================================|
+2022-06-29 15:26:05.113 NOTICE: MNGR: uws not available, using ws library
+2022-06-29 15:26:05.117 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-29 15:26:05.118 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: b847a8e5d1c8
+2022-06-29 15:26:05.118 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-29 15:26:05.444 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-29 15:26:06.456 NOTICE: MNGR: lpm_f: Connection established
+2022-06-29 15:26:06.571 NOTICE: MNGR: Updated server configuration
+2022-06-29 15:26:06.704 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-29 15:26:06.839 NOTICE: MNGR: Running proxy configurations...
+2022-06-29 15:26:06.840 NOTICE: MNGR: Starting port 22225
+2022-06-29 15:26:08.203 NOTICE: MNGR: Port 22225 ready
+2022-06-29 15:26:08.207 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-29 15:26:10.170 NOTICE: MNGR: Creating web interface...
+2022-06-29 15:26:10.176 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-29 15:30:24.547 NOTICE: MNGR: uws not available, using ws library
+2022-06-29 15:30:24.551 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-29 15:30:24.552 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: b847a8e5d1c8
+2022-06-29 15:30:24.555 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-29 15:30:24.855 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-29 15:30:25.766 NOTICE: MNGR: lpm_f: Connection established
+2022-06-29 15:30:25.901 NOTICE: MNGR: Updated server configuration
+2022-06-29 15:30:26.037 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-29 15:30:26.144 NOTICE: MNGR: Running proxy configurations...
+2022-06-29 15:30:26.145 NOTICE: MNGR: Starting port 22225
+2022-06-29 15:30:27.420 NOTICE: MNGR: Port 22225 ready
+2022-06-29 15:30:27.420 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-29 15:30:29.026 NOTICE: MNGR: Creating web interface...
+2022-06-29 15:30:29.034 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-29 15:34:47.447 NOTICE: MNGR: uws not available, using ws library
+2022-06-29 15:34:47.452 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-29 15:34:47.453 NOTICE: MNGR: Running Proxy Manager
+PID: 17
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: b847a8e5d1c8
+2022-06-29 15:34:47.453 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-29 15:34:47.738 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-29 15:34:48.648 NOTICE: MNGR: lpm_f: Connection established
+2022-06-29 15:34:48.763 NOTICE: MNGR: Updated server configuration
+2022-06-29 15:34:48.900 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-29 15:34:49.099 NOTICE: MNGR: Running proxy configurations...
+2022-06-29 15:34:49.101 NOTICE: MNGR: Starting port 22225
+2022-06-29 15:34:50.509 NOTICE: MNGR: Port 22225 ready
+2022-06-29 15:34:50.510 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-29 15:34:52.962 NOTICE: MNGR: Creating web interface...
+2022-06-29 15:34:52.970 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-29 15:40:53.528 NOTICE: MNGR: uws not available, using ws library
+2022-06-29 15:40:53.532 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-29 15:40:53.533 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: b847a8e5d1c8
+2022-06-29 15:40:53.534 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-29 15:40:53.883 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-29 15:40:54.870 NOTICE: MNGR: lpm_f: Connection established
+2022-06-29 15:40:54.988 NOTICE: MNGR: Updated server configuration
+2022-06-29 15:40:55.148 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-29 15:40:55.249 NOTICE: MNGR: Running proxy configurations...
+2022-06-29 15:40:55.251 NOTICE: MNGR: Starting port 22225
+2022-06-29 15:40:56.341 NOTICE: MNGR: Port 22225 ready
+2022-06-29 15:40:56.342 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-29 15:40:58.157 NOTICE: MNGR: Creating web interface...
+2022-06-29 15:40:58.164 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-29 15:43:22.741 NOTICE: MNGR: uws not available, using ws library
+2022-06-29 15:43:22.745 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-29 15:43:22.746 NOTICE: MNGR: Running Proxy Manager
+PID: 17
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: b847a8e5d1c8
+2022-06-29 15:43:22.747 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-29 15:43:26.057 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-29 15:43:27.016 NOTICE: MNGR: lpm_f: Connection established
+2022-06-29 15:43:27.136 NOTICE: MNGR: Updated server configuration
+2022-06-29 15:43:27.272 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-29 15:43:27.409 NOTICE: MNGR: Running proxy configurations...
+2022-06-29 15:43:27.411 NOTICE: MNGR: Starting port 22225
+2022-06-29 15:43:28.058 WARN: MNGR: Worker with PID 56 died (null SIGSEGV). Restarting...
+2022-06-29 15:43:28.197 NOTICE: MNGR: Worker with PID 206 recreated
+2022-06-29 15:43:29.138 NOTICE: MNGR: Port 22225 ready
+2022-06-29 15:43:29.139 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-29 15:43:30.912 NOTICE: MNGR: Creating web interface...
+2022-06-29 15:43:30.920 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-29 15:47:07.745 NOTICE: MNGR: uws not available, using ws library
+2022-06-29 15:47:07.753 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-29 15:47:07.754 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: b847a8e5d1c8
+2022-06-29 15:47:07.755 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-29 15:47:08.059 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-29 15:47:09.073 NOTICE: MNGR: lpm_f: Connection established
+2022-06-29 15:47:09.193 NOTICE: MNGR: Updated server configuration
+2022-06-29 15:47:09.393 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-29 15:47:09.947 NOTICE: MNGR: Running proxy configurations...
+2022-06-29 15:47:09.952 NOTICE: MNGR: Starting port 22225
+2022-06-29 15:47:11.588 WARN: MNGR: Worker with PID 60 died (null SIGSEGV). Restarting...
+2022-06-29 15:47:11.594 NOTICE: MNGR: Worker with PID 211 recreated
+2022-06-29 15:47:12.332 NOTICE: MNGR: Port 22225 ready
+2022-06-29 15:47:12.334 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-29 15:47:13.885 NOTICE: MNGR: Creating web interface...
+2022-06-29 15:47:13.893 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-29 15:50:42.930 NOTICE: MNGR: uws not available, using ws library
+2022-06-29 15:50:42.935 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-29 15:50:42.936 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: b847a8e5d1c8
+2022-06-29 15:50:42.936 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-29 15:51:01.319 NOTICE: MNGR: uws not available, using ws library
+2022-06-29 15:51:01.323 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-29 15:51:01.324 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: b847a8e5d1c8
+2022-06-29 15:51:01.325 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-29 15:51:01.651 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-29 15:51:02.604 NOTICE: MNGR: lpm_f: Connection established
+2022-06-29 15:51:02.718 NOTICE: MNGR: Updated server configuration
+2022-06-29 15:51:02.852 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-29 15:51:02.977 NOTICE: MNGR: Running proxy configurations...
+2022-06-29 15:51:02.979 NOTICE: MNGR: Starting port 22225
+2022-06-29 15:51:04.272 NOTICE: MNGR: Port 22225 ready
+2022-06-29 15:51:04.273 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-29 15:51:06.265 NOTICE: MNGR: Creating web interface...
+2022-06-29 15:51:06.287 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-29 15:54:03.901 NOTICE: MNGR: uws not available, using ws library
+2022-06-29 15:54:03.905 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-29 15:54:03.906 NOTICE: MNGR: Running Proxy Manager
+PID: 19
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: a20caa8bc40a
+2022-06-29 15:54:03.907 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-29 15:54:04.310 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-29 15:54:05.877 NOTICE: MNGR: lpm_f: Connection established
+2022-06-29 15:54:06.079 NOTICE: MNGR: Updated server configuration
+2022-06-29 15:54:06.368 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-29 15:54:06.812 NOTICE: MNGR: Running proxy configurations...
+2022-06-29 15:54:06.818 NOTICE: MNGR: Starting port 22225
+2022-06-29 15:54:08.198 NOTICE: MNGR: Port 22225 ready
+2022-06-29 15:54:08.199 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-29 15:54:10.046 NOTICE: MNGR: Creating web interface...
+2022-06-29 15:54:10.056 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|
+2022-06-29 15:55:10.990 NOTICE: MNGR: uws not available, using ws library
+2022-06-29 15:55:10.995 NOTICE: lum_node: .bashrc not found! alias for whitelisting failed
+2022-06-29 15:55:10.996 NOTICE: MNGR: Running Proxy Manager
+PID: 18
+Node: 14.19.0
+Version: 1.300.693
+Build date: 19-May-22 10:42:08
+Os version: linux x64 5.4.0-113-generic
+Host name: a20caa8bc40a
+2022-06-29 15:55:10.997 NOTICE: Conf: Loaded config /root/proxy_manager/.luminati.json
+2022-06-29 15:55:11.374 NOTICE: MNGR: Checking the domain availability... lum-lpm.com
+2022-06-29 15:55:13.702 NOTICE: MNGR: lpm_f: Connection established
+2022-06-29 15:55:13.874 NOTICE: MNGR: Updated server configuration
+2022-06-29 15:55:14.156 NOTICE: MNGR: Master cluster setting up 16 workers
+2022-06-29 15:55:14.297 NOTICE: MNGR: Running proxy configurations...
+2022-06-29 15:55:14.299 NOTICE: MNGR: Starting port 22225
+2022-06-29 15:55:15.520 NOTICE: MNGR: Port 22225 ready
+2022-06-29 15:55:15.521 NOTICE: MNGR: Skipping API call before auth: /lpm/lpm_users
+2022-06-29 15:55:17.281 NOTICE: MNGR: Creating web interface...
+2022-06-29 15:55:17.291 NOTICE: MNGR: Proxy Manager is running
+|================================================|
+|                                                |
+|                                                |
+|               Open admin browser:              |
+|             http://127.0.0.1:22999             |
+|                 ver. 1.300.693                 |
+|                                                |
+|    Do not close the process while using the    |
+|    Proxy Manager                               |
+|                                                |
+|                                                |
+|================================================|

@@ -5,12 +5,12 @@ services:
   elasticsearch:
     image: elasticsearch:7.14.1
     container_name: elasticsearch
-    # deploy:
-    #   resources:
-    #     limits:
-    #       memory: 2G
-    #     reservations:
-    #       memory: 1G
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
     ports:
       - "9200:9200"
       - "9300:9300"
@@ -172,6 +172,8 @@ services:
       context: ./clientApi
       dockerfile: Dockerfile
     restart: always   
+    depends_on:
+      - elasticsearch
     environment:
       API_HOST: api
       ELASTIC_HOST: elasticsearch
@@ -185,6 +187,20 @@ services:
        - ./clientApi:/var/www/clientApi
     networks:
       - harvestore
+
+  harvestore-admin:
+    container_name: harvestore-admin
+    build:
+      context: ./harvestoreAdmin
+      dockerfile: Dockerfile
+      args:
+       - "VITE_NODE_ENV=production"
+    restart: always
+    ports:
+      - 3000:3000 
+    networks:
+      - harvestore
+
       # - traefik
     # labels:
     #   - traefik.enable=true
